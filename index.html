@@ -16,336 +16,80 @@
         }
         .container { max-width: 420px; margin: 0 auto; background: #f5f5f7; border-radius: 30px; overflow: hidden; }
         
-        /* 顶部Banner */
         .header {
             background: linear-gradient(135deg, #1d1d1f 0%, #2d2d2f 100%);
             padding: 40px 30px;
             text-align: center;
             color: white;
         }
-        .header .big-number { 
-            font-size: 56px; 
-            font-weight: 700;
-            letter-spacing: -2px;
-        }
-        .header .label { 
-            font-size: 14px; 
-            opacity: 0.7;
-            margin-top: 5px;
-        }
-        .header .progress-text { 
-            font-size: 13px; 
-            opacity: 0.5;
-            margin-top: 20px;
-        }
+        .header .big-number { font-size: 56px; font-weight: 700; letter-spacing: -2px; }
+        .header .label { font-size: 14px; opacity: 0.7; margin-top: 5px; }
+        .header .progress-text { font-size: 13px; opacity: 0.5; margin-top: 20px; }
         
-        /* 基本信息卡片 */
-        .info-card {
-            background: white;
-            margin: 20px;
-            border-radius: 20px;
-            padding: 25px;
-            box-shadow: 0 2px 20px rgba(0,0,0,0.04);
-        }
-        .info-title {
-            font-size: 13px;
-            color: #86868b;
-            margin-bottom: 15px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        .info-grid {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 10px;
-            text-align: center;
-        }
-        .info-item .value {
-            font-size: 20px;
-            font-weight: 600;
-            color: #1d1d1f;
-        }
-        .info-item .label {
-            font-size: 11px;
-            color: #86868b;
-            margin-top: 4px;
-        }
+        .info-card { background: white; margin: 20px; border-radius: 20px; padding: 25px; box-shadow: 0 2px 20px rgba(0,0,0,0.04); }
+        .info-title { font-size: 13px; color: #86868b; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px; }
+        .info-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; text-align: center; }
+        .info-item .value { font-size: 20px; font-weight: 600; color: #1d1d1f; }
+        .info-item .label { font-size: 11px; color: #86868b; margin-top: 4px; }
         
-        /* 日历 */
-        .calendar-section {
-            background: white;
-            margin: 0 20px 20px;
-            border-radius: 20px;
-            padding: 20px;
-            box-shadow: 0 2px 20px rgba(0,0,0,0.04);
-        }
-        .calendar-title {
-            font-size: 13px;
-            color: #86868b;
-            margin-bottom: 15px;
-        }
-        .calendar-grid {
-            display: grid;
-            grid-template-columns: repeat(7, 1fr);
-            gap: 8px;
-        }
-        .calendar-day {
-            text-align: center;
-            padding: 12px 4px;
-            background: #f5f5f7;
-            border-radius: 12px;
-            font-size: 12px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-        .calendar-day:hover { 
-            background: #e8e8ed; 
-            transform: scale(1.05);
-        }
-        .calendar-day.completed { 
-            background: #34c759; 
-            color: white; 
-        }
-        .calendar-day.today { 
-            background: #007aff; 
-            color: white; 
-            font-weight: 600;
-            box-shadow: 0 4px 15px rgba(0,122,255,0.3);
-        }
-        .calendar-day .day-num { 
-            font-size: 15px; 
-            font-weight: 600; 
-        }
+        .calendar-section { background: white; margin: 0 20px 20px; border-radius: 20px; padding: 20px; box-shadow: 0 2px 20px rgba(0,0,0,0.04); }
+        .calendar-title { font-size: 13px; color: #86868b; margin-bottom: 15px; }
+        .calendar-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 8px; }
+        .calendar-day { text-align: center; padding: 12px 4px; background: #f5f5f7; border-radius: 12px; font-size: 12px; cursor: pointer; transition: all 0.3s; }
+        .calendar-day:hover { background: #e8e8ed; transform: scale(1.05); }
+        .calendar-day.completed { background: #34c759; color: white; }
+        .calendar-day.today { background: #007aff; color: white; font-weight: 600; box-shadow: 0 4px 15px rgba(0,122,255,0.3); }
+        .calendar-day .day-num { font-size: 15px; font-weight: 600; }
         
-        /* 日期导航 */
-        .date-nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin: 20px;
-            background: white;
-            border-radius: 16px;
-            padding: 12px 20px;
-            box-shadow: 0 2px 20px rgba(0,0,0,0.04);
-        }
-        .date-nav-btn {
-            background: #f5f5f7;
-            color: #007aff;
-            border: none;
-            padding: 10px 18px;
-            border-radius: 20px;
-            font-size: 14px;
-            cursor: pointer;
-            font-weight: 500;
-            transition: all 0.2s;
-        }
-        .date-nav-btn:active { background: #e8e8ed; }
-        .date-nav-btn:disabled {
-            color: #c7c7cc;
-            background: #f5f5f7;
-        }
-        .date-nav-title {
-            font-size: 16px;
-            font-weight: 600;
-            color: #1d1d1f;
-        }
+        .date-nav { display: flex; justify-content: space-between; align-items: center; margin: 20px; background: white; border-radius: 16px; padding: 12px 20px; box-shadow: 0 2px 20px rgba(0,0,0,0.04); }
+        .date-nav-btn { background: #f5f5f7; color: #007aff; border: none; padding: 10px 18px; border-radius: 20px; font-size: 14px; cursor: pointer; font-weight: 500; }
+        .date-nav-btn:disabled { color: #c7c7cc; }
+        .date-nav-title { font-size: 16px; font-weight: 600; color: #1d1d1f; }
         
-        /* 内容卡片 */
-        .content-card {
-            background: white;
-            margin: 0 20px 20px;
-            border-radius: 20px;
-            padding: 25px;
-            box-shadow: 0 2px 20px rgba(0,0,0,0.04);
-        }
-        .section-title {
-            font-size: 18px;
-            font-weight: 600;
-            color: #1d1d1f;
-            margin-bottom: 20px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
+        .content-card { background: white; margin: 0 20px 20px; border-radius: 20px; padding: 25px; box-shadow: 0 2px 20px rgba(0,0,0,0.04); }
+        .section-title { font-size: 18px; font-weight: 600; color: #1d1d1f; margin-bottom: 20px; display: flex; align-items: center; gap: 8px; }
         
-        /* 餐食卡片 */
-        .meal-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 12px;
-            margin-bottom: 20px;
-        }
-        .meal-card {
-            background: #f5f5f7;
-            border-radius: 16px;
-            overflow: hidden;
-            text-align: center;
-        }
-        .meal-header {
-            padding: 10px;
-            font-weight: 600;
-            font-size: 13px;
-            color: white;
-        }
+        .meal-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 15px; }
+        .meal-card { background: #f5f5f7; border-radius: 16px; overflow: hidden; text-align: center; }
+        .meal-header { padding: 10px; font-weight: 600; font-size: 13px; color: white; }
         .meal-header.breakfast { background: linear-gradient(135deg, #ff9500, #ff9f0a); }
         .meal-header.lunch { background: linear-gradient(135deg, #34c759, #30d158); }
         .meal-header.dinner { background: linear-gradient(135deg, #5856d6, #5e5ce6); }
-        .meal-img {
-            height: 100px;
-            background: #f5f5f7;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 32px;
-        }
-        .meal-info {
-            padding: 12px;
-            font-size: 11px;
-            color: #86868b;
-        }
-        .meal-info .cal { 
-            font-weight: 600; 
-            color: #ff3b30;
-            font-size: 14px;
-        }
-        .meal-info .prot { 
-            font-weight: 500; 
-            color: #34c759;
-        }
+        .meal-img { height: 80px; background: #f5f5f7; display: flex; align-items: center; justify-content: center; font-size: 28px; }
+        .meal-info { padding: 10px; font-size: 10px; color: #86868b; }
+        .meal-info .name { font-weight: 500; font-size: 11px; margin-bottom: 4px; color: #1d1d1f; }
+        .meal-info .cal { font-weight: 600; color: #ff3b30; font-size: 13px; }
+        .meal-info .prot { font-weight: 500; color: #34c759; font-size: 12px; }
         
-        /* 加餐 */
-        .snack-bar {
-            background: #f5f5f7;
-            border-radius: 12px;
-            padding: 14px 18px;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-        .snack-icon {
-            width: 36px;
-            height: 36px;
-            background: linear-gradient(135deg, #8e8e93, #98989d);
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 18px;
-        }
+        .snack-bar { background: #f5f5f7; border-radius: 12px; padding: 12px 16px; display: flex; align-items: center; gap: 10px; margin-top: 10px; }
+        .snack-icon { width: 32px; height: 32px; background: linear-gradient(135deg, #8e8e93, #98989d); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 16px; }
         .snack-text { flex: 1; }
-        .snack-text .name { font-weight: 500; font-size: 14px; }
-        .snack-text .detail { font-size: 12px; color: #86868b; }
-        .snack-macros {
-            text-align: right;
-            font-size: 13px;
-        }
+        .snack-text .name { font-weight: 500; font-size: 13px; }
+        .snack-text .detail { font-size: 11px; color: #86868b; }
+        .snack-macros { text-align: right; font-size: 12px; }
         .snack-macros .cal { color: #ff3b30; font-weight: 600; }
         .snack-macros .prot { color: #34c759; }
         
-        /* 统计卡片 */
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 10px;
-            margin-bottom: 20px;
-        }
-        .stat-card {
-            background: #f5f5f7;
-            padding: 18px 10px;
-            border-radius: 16px;
-            text-align: center;
-        }
-        .stat-card .value { 
-            font-size: 22px; 
-            font-weight: 700;
-            color: #1d1d1f;
-        }
-        .stat-card .label { 
-            font-size: 11px; 
-            color: #86868b;
-            margin-top: 4px;
-        }
+        .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 20px; }
+        .stat-card { background: #f5f5f7; padding: 16px 8px; border-radius: 16px; text-align: center; }
+        .stat-card .value { font-size: 20px; font-weight: 700; color: #1d1d1f; }
+        .stat-card .label { font-size: 10px; color: #86868b; margin-top: 4px; }
         .stat-card.good .value { color: #34c759; }
         .stat-card.bad .value { color: #ff3b30; }
         
-        /* 进度条 */
-        .progress-item { margin-bottom: 16px; }
-        .progress-header { 
-            display: flex; 
-            justify-content: space-between; 
-            margin-bottom: 8px; 
-            font-size: 13px;
-        }
+        .progress-item { margin-bottom: 14px; }
+        .progress-header { display: flex; justify-content: space-between; margin-bottom: 6px; font-size: 12px; }
         .progress-header span:first-child { color: #86868b; }
         .progress-header span:last-child { font-weight: 600; color: #1d1d1f; }
-        .progress-bar { 
-            height: 8px; 
-            background: #e5e5ea; 
-            border-radius: 4px; 
-            overflow: hidden; 
-        }
-        .progress-fill { 
-            height: 100%; 
-            border-radius: 4px; 
-            transition: width 0.5s ease;
-        }
+        .progress-bar { height: 8px; background: #e5e5ea; border-radius: 4px; overflow: hidden; }
+        .progress-fill { height: 100%; border-radius: 4px; transition: width 0.5s ease; }
         .progress-fill.calorie { background: linear-gradient(90deg, #ff3b30, #ff6961); }
         .progress-fill.protein { background: linear-gradient(90deg, #34c759, #30d158); }
         
-        /* 运动标签 */
-        .exercise-tags { display: flex; flex-wrap: wrap; gap: 8px; }
-        .exercise-tag {
-            background: linear-gradient(135deg, #007aff, #0a84ff);
-            color: white;
-            padding: 10px 16px;
-            border-radius: 20px;
-            font-size: 13px;
-            font-weight: 500;
-        }
+        .exercise-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+        .exercise-tag { background: linear-gradient(135deg, #007aff, #0a84ff); color: white; padding: 8px 14px; border-radius: 20px; font-size: 12px; font-weight: 500; }
         
-        /* 分析区域 */
-        .compare-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 20px; }
-        .compare-section { padding: 16px; border-radius: 16px; }
-        .compare-section.good { background: linear-gradient(135deg, #e8f5e9, #d4edda); }
-        .compare-section.bad { background: linear-gradient(135deg, #ffe5e5, #fdecea); }
-        .compare-section h3 { 
-            font-size: 14px; 
-            font-weight: 600;
-            margin-bottom: 10px;
-        }
-        .good h3 { color: #34c759; }
-        .bad h3 { color: #ff3b30; }
-        .compare-section ul { 
-            margin: 0; 
-            padding-left: 16px; 
-            font-size: 12px;
-        }
-        .compare-section li { margin: 6px 0; color: #86868b; }
-        
-        /* 行动清单 */
-        .action-list {
-            background: linear-gradient(135deg, #fff8e1, #fff3e0);
-            border-radius: 16px;
-            padding: 16px;
-        }
-        .action-item { 
-            display: flex; 
-            align-items: center; 
-            padding: 10px 0; 
-            border-bottom: 1px solid rgba(0,0,0,0.05);
-        }
-        .action-item:last-child { border-bottom: none; }
-        .action-icon { font-size: 20px; margin-right: 12px; }
-        .action-text { font-size: 13px; color: #8e8e93; }
-        .action-do { font-weight: 600; color: #1d1d1f; }
-        
-        /* 页脚 */
-        .footer { 
-            text-align: center; 
-            color: #86868b; 
-            padding: 30px 20px; 
-            font-size: 12px;
-        }
+        .footer { text-align: center; color: #86868b; padding: 30px 20px; font-size: 12px; }
         
         .day-content { display: none; }
         .day-content.active { display: block; }
@@ -390,7 +134,7 @@
                         <div class="meal-header breakfast">🌅 早餐</div>
                         <div class="meal-img">🍳</div>
                         <div class="meal-info">
-                            <div>鸡蛋+玉米+咖啡</div>
+                            <div class="name">鸡蛋2个+玉米+咖啡</div>
                             <div class="cal">~380</div>
                             <div class="prot">14g</div>
                         </div>
@@ -399,7 +143,7 @@
                         <div class="meal-header lunch">☀️ 午餐</div>
                         <div class="meal-img">🍜</div>
                         <div class="meal-info">
-                            <div>清汤麻辣烫</div>
+                            <div class="name">清汤麻辣烫</div>
                             <div class="cal">~300</div>
                             <div class="prot">35g</div>
                         </div>
@@ -408,7 +152,7 @@
                         <div class="meal-header dinner">🌙 晚餐</div>
                         <div class="meal-img">🍽️</div>
                         <div class="meal-info">
-                            <div>未记录</div>
+                            <div class="name">—</div>
                             <div class="cal">—</div>
                             <div class="prot">—</div>
                         </div>
@@ -416,32 +160,27 @@
                 </div>
                 <div class="snack-bar">
                     <div class="snack-icon">☕</div>
-                    <div class="snack-text">
-                        <div class="name">Manner小拿铁</div>
-                        <div class="detail">热加浓</div>
-                    </div>
-                    <div class="snack-macros">
-                        <span class="cal">80</span> | <span class="prot">2g</span>
-                    </div>
+                    <div class="snack-text"><div class="name">Manner小拿铁</div><div class="detail">热加浓</div></div>
+                    <div class="snack-macros"><span class="cal">80</span> | <span class="prot">2g</span></div>
                 </div>
             </div>
             <div class="content-card">
                 <div class="section-title">📊 Day 1 数据</div>
                 <div class="stats-grid">
-                    <div class="stat-card"><div class="value">760</div><div class="label">摄入 kcal</div></div>
-                    <div class="stat-card bad"><div class="value">440</div><div class="label">缺口</div></div>
+                    <div class="stat-card"><div class="value">980</div><div class="label">摄入 kcal</div></div>
+                    <div class="stat-card bad"><div class="value">220</div><div class="label">缺口</div></div>
                     <div class="stat-card bad"><div class="value">51g</div><div class="label">蛋白</div></div>
                     <div class="stat-card good"><div class="value">65'</div><div class="label">运动</div></div>
                 </div>
                 <div class="progress-item">
-                    <div class="progress-header"><span>热量</span><span>760 / 1200</span></div>
-                    <div class="progress-bar"><div class="progress-fill calorie" style="width: 63%"></div></div>
+                    <div class="progress-header"><span>热量</span><span>980 / 1200</span></div>
+                    <div class="progress-bar"><div class="progress-fill calorie" style="width: 82%"></div></div>
                 </div>
                 <div class="progress-item">
                     <div class="progress-header"><span>蛋白质</span><span>51g / 80g</span></div>
                     <div class="progress-bar"><div class="progress-fill protein" style="width: 64%"></div></div>
                 </div>
-                <div class="exercise-tags" style="margin-top: 15px;">
+                <div class="exercise-tags">
                     <span class="exercise-tag">💪 背部45分</span>
                     <span class="exercise-tag">🏃 爬坡20分</span>
                 </div>
@@ -457,7 +196,7 @@
                         <div class="meal-header breakfast">🌅 早餐</div>
                         <div class="meal-img">🍳</div>
                         <div class="meal-info">
-                            <div>水煮蛋2个+玉米</div>
+                            <div class="name">水煮蛋2个+玉米</div>
                             <div class="cal">~200</div>
                             <div class="prot">14g</div>
                         </div>
@@ -466,7 +205,7 @@
                         <div class="meal-header lunch">☀️ 午餐</div>
                         <div class="meal-img">🥪</div>
                         <div class="meal-info">
-                            <div>Subway烤牛肉</div>
+                            <div class="name">Subway烤牛肉</div>
                             <div class="cal">~320</div>
                             <div class="prot">24g</div>
                         </div>
@@ -475,7 +214,7 @@
                         <div class="meal-header dinner">🌙 晚餐</div>
                         <div class="meal-img">🍽️</div>
                         <div class="meal-info">
-                            <div>未记录</div>
+                            <div class="name">—</div>
                             <div class="cal">—</div>
                             <div class="prot">—</div>
                         </div>
@@ -483,13 +222,8 @@
                 </div>
                 <div class="snack-bar">
                     <div class="snack-icon">☕</div>
-                    <div class="snack-text">
-                        <div class="name">Manner小拿铁</div>
-                        <div class="detail">热加浓</div>
-                    </div>
-                    <div class="snack-macros">
-                        <span class="cal">80</span> | <span class="prot">2g</span>
-                    </div>
+                    <div class="snack-text"><div class="name">Manner小拿铁</div><div class="detail">热加浓</div></div>
+                    <div class="snack-macros"><span class="cal">80</span> | <span class="prot">2g</span></div>
                 </div>
             </div>
             <div class="content-card">
@@ -508,7 +242,7 @@
                     <div class="progress-header"><span>蛋白质</span><span>40g / 80g</span></div>
                     <div class="progress-bar"><div class="progress-fill protein" style="width: 50%"></div></div>
                 </div>
-                <div class="exercise-tags" style="margin-top: 15px;">
+                <div class="exercise-tags">
                     <span class="exercise-tag">💪 胸部40分</span>
                     <span class="exercise-tag">🏃 爬坡30分</span>
                 </div>
@@ -523,40 +257,23 @@
                     <div class="meal-card">
                         <div class="meal-header breakfast">🌅 早餐</div>
                         <div class="meal-img">🍳</div>
-                        <div class="meal-info">
-                            <div>鸡蛋+玉米+咖啡</div>
-                            <div class="cal">~380</div>
-                            <div class="prot">14g</div>
-                        </div>
+                        <div class="meal-info"><div class="name">鸡蛋+玉米+咖啡</div><div class="cal">~380</div><div class="prot">14g</div></div>
                     </div>
                     <div class="meal-card">
                         <div class="meal-header lunch">☀️ 午餐</div>
                         <div class="meal-img">🥗</div>
-                        <div class="meal-info">
-                            <div>拌将推荐</div>
-                            <div class="cal">~300</div>
-                            <div class="prot">35g</div>
-                        </div>
+                        <div class="meal-info"><div class="name">拌将推荐</div><div class="cal">~300</div><div class="prot">35g</div></div>
                     </div>
                     <div class="meal-card">
                         <div class="meal-header dinner">🌙 晚餐</div>
                         <div class="meal-img">🐟</div>
-                        <div class="meal-info">
-                            <div>清蒸鱼+米饭</div>
-                            <div class="cal">~350</div>
-                            <div class="prot">40g</div>
-                        </div>
+                        <div class="meal-info"><div class="name">清蒸鱼+米饭</div><div class="cal">~350</div><div class="prot">40g</div></div>
                     </div>
                 </div>
                 <div class="snack-bar">
                     <div class="snack-icon">☕</div>
-                    <div class="snack-text">
-                        <div class="name">Manner小拿铁</div>
-                        <div class="detail">热加浓</div>
-                    </div>
-                    <div class="snack-macros">
-                        <span class="cal">80</span> | <span class="prot">2g</span>
-                    </div>
+                    <div class="snack-text"><div class="name">Manner小拿铁</div><div class="detail">热加浓</div></div>
+                    <div class="snack-macros"><span class="cal">80</span> | <span class="prot">2g</span></div>
                 </div>
             </div>
         </div>
@@ -586,7 +303,6 @@
 
         function renderCalendar() {
             const grid = document.getElementById('calendarGrid');
-            // 只显示前7天
             let html = '';
             for (let i = 0; i < 7; i++) {
                 const d = days[i];
@@ -598,11 +314,7 @@
             grid.innerHTML = html;
         }
 
-        function goToDay(day) {
-            currentDay = day;
-            updateView();
-        }
-
+        function goToDay(day) { currentDay = day; updateView(); }
         function changeDay(delta) {
             currentDay += delta;
             if (currentDay < 1) currentDay = 1;
@@ -613,14 +325,11 @@
         function updateView() {
             document.getElementById('prevBtn').disabled = currentDay <= 1;
             document.getElementById('nextBtn').disabled = currentDay >= 14;
-            
             const d = days[currentDay - 1];
             document.getElementById('dayTitle').textContent = `Day ${currentDay} · ${d.date}`;
-            
             document.querySelectorAll('.day-content').forEach(el => el.classList.remove('active'));
             const activeEl = document.getElementById('day' + currentDay);
             if (activeEl) activeEl.classList.add('active');
-            
             const remaining = 14 - currentDay;
             const status = currentDay <= 2 ? (currentDay === 2 ? '进行中' : '已完成') : '进行中';
             document.getElementById('progressText').textContent = `Day ${currentDay} ${status} · 剩余 ${remaining} 天`;
